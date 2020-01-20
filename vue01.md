@@ -2,7 +2,7 @@
 - v-for的优先级要高于v-if;
 - 优化:
 
-    `<div v-if="false" v-for="item of list">{{item}}</div>`
+    `<div v-if="something" v-for="item of list">{{item}}</div>`
 
     1. 如果v-if是要将整个列表隐藏的情况 
         - 可以在列表外套一个template或套一个盒子,然后在外层盒子进行v-if判断
